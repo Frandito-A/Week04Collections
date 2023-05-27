@@ -139,9 +139,9 @@ public class codingAssignmentWeek04 {
 		double average2 = sum2 / array2.length;
 		
 		if (average1 > average2) {
-			return true;
-		}else {
 			return false;
+		}else {
+			return true;
 		}
 	}
 //12

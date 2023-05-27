@@ -63,28 +63,28 @@ public class codingAssignmentWeek04 {
 		System.out.println(concateWord("hi", 4));
 		System.out.println(" ");
 //8 
-		System.out.println(createFullName("John", "Cena"));
+		System.out.println(createFullName("Carmen", "Cena"));
 		System.out.println(" ");
 //9
-		int [] numb = {20, 10, 1, 23, 7};
+		int [] numb = {20, 10, 1, 90, 7};
 		System.out.println(arrayOfInt(numb));
 		System.out.println(" ");
 //10 	 
-		double [] numbers = {70, 80, 10, 0.5, 203, 1};
+		double [] numbers = {70, 80, 10, 0.5, 203, 1.5};
 		System.out.println(avgOfAllelement(numbers));
 		System.out.println(" ");
 //12
 		boolean hotTemp = true; 
-		double money = 10.75;
+		double money = 10.14;
 		System.out.println(willBuyDrink(hotTemp, money));
 		System.out.println(" ");
 //11
 		double[] firstArray = {2,4,6,8,10};
-		double[] secondArray = {1,2,3,4,5,6};
+		double[] secondArray = {1,2,3,4,5,6,25};
 		System.out.println(compareAverages(firstArray, secondArray));
 		System.out.println(" ");
 //13
-		int number = 70;
+		int number = 27;
 		multiplicationTable(number);
 	}
 	
@@ -110,9 +110,9 @@ public class codingAssignmentWeek04 {
 //9
 	public static boolean arrayOfInt(int[] array) {
 		int sum = 0;
-		for (int interger : array) {
+		for (int integer : array) {
 			
-			sum = sum + interger; 
+			sum = sum + integer; 
 		}
 		return sum > 100;		
 	}
@@ -146,10 +146,10 @@ public class codingAssignmentWeek04 {
 	}
 //12
 	public static boolean willBuyDrink(boolean isHotOutside, double moneyInPocket) {
-		if (!isHotOutside && moneyInPocket > 10.50) {
-			return false; 
+		if (isHotOutside && moneyInPocket > 10.50) {
+			return true; 
 		} else {
-			return true;
+			return false;
 		}
 		 
 	}
